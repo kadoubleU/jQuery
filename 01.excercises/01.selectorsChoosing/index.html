@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Excercise</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript">
+        $(function() {
+            alert ($("*", document.body).length);
+        });
+    </script> -->
+    
+</head>
+<body>
+    <!-- Simple element choosing START -->
+
+    <ul>
+        <li></li>
+    </ul>
+    <p></p>
+    <div></div>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#div1").css("border", "3px solid #f00");
+        });
+    </script>
+
+    <div id="div1">Hello</div>
+
+    <script type="text/javascript">
+        $(function() {
+            $(".exampleClass").css("background-color", "yellow");
+            $(".exampleClass").css("color", "#f00");
+            $(".exampleClass").css("font-weight", "700");
+            $(".exampleClass").css("padding", "3px 10px");
+            $(".exampleClass").css("margin", "20px 0px");
+        });
+    </script>
+    <div class="exampleClass">
+        <p>This is Class Selection with jQuery Example</p>
+    </div>
+
+        <!-- Simple element choosing END -->
+</body>
+</html>
