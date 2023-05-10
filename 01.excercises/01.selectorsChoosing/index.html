@@ -17,7 +17,7 @@
     <!-- Simple element choosing START -->
 
     <ul>
-        <li></li>
+        <li id="test">Test</li>
     </ul>
     <p></p>
     <div></div>
@@ -42,7 +42,29 @@
     <div class="exampleClass">
         <p>This is Class Selection with jQuery Example</p>
     </div>
+    <!-- Simple element choosing END -->
 
-        <!-- Simple element choosing END -->
+    <!-- Simple element choosing from one type START -->
+    <div>
+        <p>This is first div for our TYPE Example</p>
+    </div>
+    <div>
+        <p>This is second div for our TYPE Example</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("div").css("display", "none");
+        });
+
+        $("#test").click(function() {
+            $("div").toggle("left");
+        });
+
+        $(function() {
+            $("div").css("border", "3px solid #f00");
+        });
+    </script>
+    <!-- Simple element choosing from one type END -->
 </body>
 </html>
